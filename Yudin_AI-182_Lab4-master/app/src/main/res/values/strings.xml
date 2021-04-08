@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hrybkov_L16</string>
+    <string name="country">Country: %1$s</string>
+    <string name="population">Population: %1$d</string>
+    <string name="square">Square: %1$d</string>
+    <string name="density_population">Population density: %1$.2f</string>
+    <string name="hdi">Human development index: %1$.3f</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tabMaxWidth">14dp</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tabIndicatorHeight" type="string">3dp</item>
+    <item name="tabPaddingStart" type="string">12dp</item>
+    <item name="tabPadingEnd" type="string">12dp</item>
+</resources>
