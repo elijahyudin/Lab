@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Hrybkov_AI-182_Lab1"
