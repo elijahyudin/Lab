@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Game Score Project</string>
+    <string name="input_second_team">Second Team</string>
+    <string name="input_first_team">First team</string>
+    <string name="input_first_team_name">Input first team name</string>
+    <string name="input_second_team_name">Input second team name</string>
+    <string name="input_time">Input time</string>
+    <string name="input_team_s_names">Input team\'s names</string>
+    <string name="seconds">Seconds</string>
+    <string name="go_to_game">Go to game</string>
+    <string name="time_to_end">Time to end</string>
+    <string name="goal_increase">+ Goal</string>
+    <string name="goal_decrease">- Goal</string>
+    <string name="cancel_game">Cancel</string>
+    <string name="start_time">00</string>
+    <string name="cont">Resume</string>
+    <string name="stop">Stop</string>
+    <string name="winner">Winner</string>
+    <string name="winner_list">Winner list</string>
+    <string name="share_result_of_match">Share result of match</string>
+    <string name="sort_list">Sort winner list</string>
+    <string name="loser">Loser</string>
+    <string name="match_result">Match result</string>
+    <string name="result">Result</string>
+    <string name="winner_list_is_empty">Winner list is empty</string>
+    <string name="clear_winner_list">Clear winner list</string>
+    <string name="new_game">New game</string>
+    <string name="channel_name">Match result</string>
+    <string name="channel_description">Notification of match result</string>
+    <string name="first_team">First team</string>
+    <string name="second_team">Second team</string>
+</resources>

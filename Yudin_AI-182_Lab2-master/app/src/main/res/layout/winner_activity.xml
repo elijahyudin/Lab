@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    tools:context=".activities.WinnerActivity">
+
+    <TextView
+        android:id="@+id/tvWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_winner_margin_top"
+        android:text="@string/winner"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_winner_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWinnerTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_winner_team_margin_top"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_winner_team_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWinner"
+        tools:text="Winner name" />
+
+    <TextView
+        android:id="@+id/tvLoser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_loser_margin_top"
+        android:text="@string/loser"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_loser_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWinnerTeam" />
+
+    <TextView
+        android:id="@+id/tvLoserTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_loser_team_margin_top"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_loser_team_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoser"
+        tools:text="Loser name" />
+
+    <TextView
+        android:id="@+id/tvMatchResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_match_result_margin_top"
+        android:text="@string/match_result"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_match_result_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoserTeam" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_result_margin_top"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_result_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMatchResult"
+        tools:text="0:0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

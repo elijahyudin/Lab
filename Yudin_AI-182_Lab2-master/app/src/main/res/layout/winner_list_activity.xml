@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    tools:context=".activities.WinnerListActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWinners"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSort"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_sort_margin_top"
+        android:backgroundTint="@color/btns_color"
+        android:text="@string/sort_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.50" />
+
+    <TextView
+        android:id="@+id/tvEmptyWinnerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_empty_list_margin_top"
+        android:text="@string/winner_list_is_empty"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_empty_list_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSort" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_clear_margin_top"
+        android:backgroundTint="@color/btns_color"
+        android:text="@string/clear_winner_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

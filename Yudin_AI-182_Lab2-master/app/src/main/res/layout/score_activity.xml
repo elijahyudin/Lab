@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    tools:context=".activities.ScoreActivity">
+
+    <TextView
+        android:id="@+id/tvTimeToEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_tv_time_to_end"
+        android:text="@string/time_to_end"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_tv_time_to_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_tv_time"
+        android:text="@string/start_time"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_tv_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="00:00" />
+
+    <TextView
+        android:id="@+id/tvFirstTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_first_team_name_margin_top"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_team_names"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="First team name" />
+
+    <TextView
+        android:id="@+id/tvFirstTeamScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_first_team_score_margin_top"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_score_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/btnIncreaseFirstTeamScore"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_increase_first_margin_top"
+        android:backgroundTint="@color/btns_color"
+        android:text="@string/goal_increase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <Button
+        android:id="@+id/btnCancelGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btns_color"
+        android:text="@string/cancel_game" />
+
+    <TextView
+        android:id="@+id/tvSecondTeamScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_second_team_score_margin_top"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_score_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/btnSeeWinnerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btns_color"
+        android:enabled="false"
+        android:text="@string/winner_list"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnIncreaseSecondTeamScore"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_increase_second_margin_top"
+        android:backgroundTint="@color/btns_color"
+        android:text="@string/goal_increase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <TextView
+        android:id="@+id/tvSecondTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_second_team_margin_top"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_team_names"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Second team name" />
+
+    <Button
+        android:id="@+id/btnDecreaseSecondTeamScore"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_decrease_second_margin_top"
+        android:backgroundTint="@color/btns_color"
+        android:text="@string/goal_decrease"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <Button
+        android:id="@+id/btnDecreaseFirstTeamScore"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_decrease_first_margin_top"
+        android:backgroundTint="@color/btns_color"
+        android:text="@string/goal_decrease"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <Button
+        android:id="@+id/btnSeeWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btns_color"
+        android:enabled="false"
+        android:text="@string/result"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_continue_margin_top"
+        android:backgroundTint="@color/btns_color"
+        android:enabled="false"
+        android:text="@string/cont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="@dimen/zero_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_stop_margin_top"
+        android:backgroundTint="@color/btns_color"
+        android:text="@string/stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/flow_margin_top"
+        app:constraint_referenced_ids="btnCancelGame, btnSeeWinner, btnSeeWinnerList"
+        app:flow_horizontalGap="@dimen/horizontal_gap_flow"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
